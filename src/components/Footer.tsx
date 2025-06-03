@@ -1,9 +1,8 @@
-
-import { Github, Twitter, Linkedin, Mail, MapPin, Globe } from 'lucide-react';
+import { Github, Twitter, Linkedin, Mail, MapPin, Globe, Instagram } from 'lucide-react';
 
 const Footer = () => {
   const socialLinks = [
-    { icon: Github, href: '#github', label: 'GitHub' },
+    { icon: Github, href: 'https://github.com/globalopensourcesoftwares', label: 'GitHub' },
     { icon: Twitter, href: '#twitter', label: 'Twitter' },
     { icon: Linkedin, href: '#linkedin', label: 'LinkedIn' },
     { 
@@ -14,14 +13,35 @@ const Footer = () => {
       ), 
       href: '#discord', 
       label: 'Discord' 
-    }
+    },
+    { icon: Instagram, href: 'https://instagram.com/gossorg.in', label: 'Instagram' },
   ];
 
   const footerLinks = {
-    Product: ['AI Models', 'Documentation', 'API Reference', 'GitHub Repos'],
-    Community: ['Discord', 'Forums', 'Contributors', 'Events'],
-    Company: ['About Us', 'Blog', 'Careers', 'Contact'],
-    Resources: ['Getting Started', 'Tutorials', 'Examples', 'Support']
+    Product: [
+      { text: 'AI Agents', href: '#ai-agents' },
+      { text: 'Braindock', href: 'https://braindock.gossorg.in' },
+      { text: 'API Reference', href: '#api-reference' },
+      { text: 'GitHub Repos', href: 'https://github.com/globalopensourcesoftwares' }
+    ],
+    Company: [
+      { text: 'About Us', href: 'https://gossorg.in/about' },
+      { text: 'Blog', href: '#blog' },
+      { text: 'Careers', href: 'https://gossorg.in/careers' },
+      { text: 'Contact', href: 'https://gossorg.in/contact' },
+      { text: 'Investors', href: 'https://gossorg.in/investors' },
+      { text: 'Partners', href: 'https://gossorg.in/partners' },
+      { text: 'Press', href: 'https://gossorg.in/press' },
+    ],
+    Support: [
+      { text: 'FAQ', href: 'https://gossorg.in/FAQ' },
+      { text: 'Ticket', href: 'https://gossorg.in/ticket' },
+    ],
+    Legal: [
+      { text: 'Terms of Service', href: 'https://gossorg.in/terms' },
+      { text: 'Privacy Policy', href: 'https://gossorg.in/privacy' },
+      { text: 'License', href: 'https://gossorg.in/license' },
+    ]
   };
 
   return (
@@ -50,16 +70,18 @@ const Footer = () => {
 
           {/* Footer Links */}
           {Object.entries(footerLinks).map(([category, links]) => (
-            <div key={category}>
+            <div key={category} className="col-span-1">
               <h3 className="font-semibold text-white mb-4">{category}</h3>
               <ul className="space-y-2">
                 {links.map((link) => (
-                  <li key={link}>
+                  <li key={link.text}>
                     <a
-                      href={`#${link.toLowerCase().replace(/\s+/g, '-')}`}
+                      href={link.href}
                       className="text-gray-400 hover:text-white transition-colors duration-200 text-sm"
+                      target={link.href.startsWith('http') ? '_blank' : '_self'}
+                      rel={link.href.startsWith('http') ? 'noopener noreferrer' : ''}
                     >
-                      {link}
+                      {link.text}
                     </a>
                   </li>
                 ))}
@@ -98,6 +120,8 @@ const Footer = () => {
                   href={social.href}
                   aria-label={social.label}
                   className="w-10 h-10 bg-white/5 border border-white/10 rounded-lg flex items-center justify-center text-gray-400 hover:text-white hover:bg-white/10 hover:border-white/20 transition-all duration-300 hover:scale-110"
+                  target={social.href.startsWith('http') ? '_blank' : '_self'}
+                  rel={social.href.startsWith('http') ? 'noopener noreferrer' : ''}
                 >
                   <social.icon />
                 </a>

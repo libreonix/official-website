@@ -43,6 +43,9 @@ const HeroSection = () => {
           <Button 
             size="lg" 
             className="bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 text-white font-semibold px-12 py-4 rounded-xl transition-all duration-300 shadow-2xl hover:shadow-blue-500/25 hover:scale-110 transform group text-lg"
+            onClick={() => {
+              window.location.href = 'https://braindock.gossorg.in';
+            }}
           >
             Discover GOSS Products
             <ArrowRight size={22} className="ml-3 group-hover:translate-x-2 transition-transform duration-300" />

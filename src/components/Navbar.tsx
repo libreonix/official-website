@@ -17,22 +17,20 @@ const Navbar = () => {
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
-            {['Home', 'Products', 'Contact'].map((item) => (
+            {[
+              { text: 'Home', href: '#home' },
+              { text: 'Products', href: 'https://braindock.gossorg.in' },
+              { text: 'Contact', href: 'https://gossorg.in/contact' },
+              { text: 'GitHub', href: 'https://github.com/globalopensourcesoftwares' },
+            ].map((item) => (
               <a
-                key={item}
-                href={`#${item.toLowerCase()}`}
+                key={item.text}
+                href={item.href}
                 className="text-gray-300 hover:text-white transition-colors duration-200 text-sm font-medium"
               >
-                {item}
+                {item.text}
               </a>
             ))}
-            <a
-              href="#github"
-              className="flex items-center space-x-2 text-gray-300 hover:text-white transition-colors duration-200 text-sm font-medium"
-            >
-              <Github size={16} />
-              <span>GitHub</span>
-            </a>
           </div>
 
           {/* Mobile Menu Button */}
@@ -50,18 +48,23 @@ const Navbar = () => {
         {isMenuOpen && (
           <div className="md:hidden border-t border-white/10 bg-black/20 backdrop-blur-xl">
             <div className="px-2 pt-2 pb-3 space-y-1">
-              {['Home', 'Products', 'Contact'].map((item) => (
+              {[
+                { text: 'Home', href: '#home' },
+                { text: 'Products', href: 'https://braindock.gossorg.in' },
+                { text: 'Contact', href: 'https://gossorg.in/contact' },
+                { text: 'GitHub', href: 'https://github.com/globalopensourcesoftwares' },
+              ].map((item) => (
                 <a
-                  key={item}
-                  href={`#${item.toLowerCase()}`}
+                  key={item.text}
+                  href={item.href}
                   className="block px-3 py-2 text-gray-300 hover:text-white transition-colors duration-200"
                   onClick={() => setIsMenuOpen(false)}
                 >
-                  {item}
+                  {item.text  }
                 </a>
               ))}
               <a
-                href="#github"
+                href="https://github.com/globalopensourcesoftwares"
                 className="flex items-center space-x-2 px-3 py-2 text-gray-300 hover:text-white transition-colors duration-200"
                 onClick={() => setIsMenuOpen(false)}
               >
