@@ -31,13 +31,8 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-8 mb-12">
           {/* Brand Section */}
           <div className="lg:col-span-2">
-            <div className="flex items-center space-x-3 mb-6">
-              <div className="w-10 h-10 bg-gradient-to-br from-blue-400 to-purple-600 rounded-xl flex items-center justify-center shadow-lg">
-                <div className="w-4 h-4 bg-white rounded-sm"></div>
-              </div>
-              <span className="font-bold text-xl text-white tracking-tight">
-                GOSS
-              </span>
+            <div className="flex items-center">
+              <img src="/goss-logo.png" alt="GOSS" className="w-40 h-40" />
             </div>
             <p className="text-gray-400 leading-relaxed mb-6 max-w-sm">
               Building the future of AI through open-source collaboration. 

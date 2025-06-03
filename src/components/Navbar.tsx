@@ -12,12 +12,7 @@ const Navbar = () => {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <div className="flex items-center space-x-3">
-            <div className="w-8 h-8 bg-gradient-to-br from-blue-400 to-purple-600 rounded-lg flex items-center justify-center shadow-lg">
-              <div className="w-3 h-3 bg-white rounded-sm"></div>
-            </div>
-            <span className="font-bold text-lg text-white tracking-tight">
-              GOSS
-            </span>
+            <img src="/goss-logo.png" alt="GOSS" className="w-20 h-20" />
           </div>
 
           {/* Desktop Navigation */}

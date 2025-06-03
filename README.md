@@ -1,73 +1,41 @@
-# Welcome to your Lovable project
+# GOSS: Global OpenSource Softwares
 
-## Project info
+## Empowering Business Logic with AI
 
-**URL**: https://lovable.dev/projects/dc834223-c3f1-4dc1-8a34-19d97fdadfa8
+GOSS is a startup dedicated to bridging the gap between open-source innovation and proprietary technology to deliver robust AI solutions for business logic. We believe in leveraging the power of collaboration and flexible technology stacks to build the future of software development.
 
-## How can I edit this code?
+## Featured Project: Braindock
 
-There are several ways of editing your application.
+Our latest endeavor is **Braindock**, a comprehensive AI workspace designed to streamline your creative and productive workflow.
 
-**Use Lovable**
+**Visit Braindock:** [braindock.gossorg.in](https://braindock.gossorg.in)
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/dc834223-c3f1-4dc1-8a34-19d97fdadfa8) and start prompting.
+**Description:**
 
-Changes made via Lovable will be committed automatically to this repo.
+"AI workspace for all your needs -- One workspace for all your ideas. Draw, write, code, and learn without switching apps."
 
-**Use your preferred IDE**
+**Key Features:**
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+*   Integrated tools for drawing, writing, and coding.
+*   AI assistance to boost productivity.
+*   Seamless integration with YouTube for learning.
+*   Focus timer to help you stay on track.
+*   Designed to take you from idea to reality in one unified environment.
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+**Pricing:**
 
-Follow these steps:
+Braindock offers a Free Forever plan, perfect for getting started, with a Pro plan coming soon for power users and teams.
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+*   **Free Forever:** ¥0/month - 2 Workspaces, Unlimited Braindock AI mini chat credits, YouTube integration, ExcaliDraw, Timer & Themes.
+*   **Pro (Coming Soon):** Designed for power users and teams with more workspaces, enhanced AI capabilities, and more.
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+**Get Started:**
 
-# Step 3: Install the necessary dependencies.
-npm i
+Ready to experience Braindock? Start creating today!
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+*   [Try it now](https://braindock.gossorg.in) - Free forever, no credit card needed.
+*   Watch how Braindock transforms your creative workflow (Link to demo video needed)
 
-**Edit a file directly in GitHub**
+## License
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/dc834223-c3f1-4dc1-8a34-19d97fdadfa8) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+This project is licensed under the [GNU Affero General Public License v3.0](https://www.gnu.org/licenses/agpl-3.0.html). See the [LICENSE](LICENSE) file for the full text.
