@@ -1,5 +1,5 @@
 
-import { Github, Twitter, Linkedin } from 'lucide-react';
+import { Github, Twitter, Linkedin, Mail, MapPin, Globe } from 'lucide-react';
 
 const Footer = () => {
   const socialLinks = [
@@ -17,32 +17,106 @@ const Footer = () => {
     }
   ];
 
+  const footerLinks = {
+    Product: ['AI Models', 'Documentation', 'API Reference', 'GitHub Repos'],
+    Community: ['Discord', 'Forums', 'Contributors', 'Events'],
+    Company: ['About Us', 'Blog', 'Careers', 'Contact'],
+    Resources: ['Getting Started', 'Tutorials', 'Examples', 'Support']
+  };
+
   return (
-    <footer className="relative border-t border-white/10 bg-black/20 backdrop-blur-xl">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="text-center">
-          {/* Social Links */}
-          <div className="flex justify-center space-x-6 mb-8">
-            {socialLinks.map((social, index) => (
-              <a
-                key={index}
-                href={social.href}
-                aria-label={social.label}
-                className="w-10 h-10 bg-white/5 border border-white/10 rounded-lg flex items-center justify-center text-gray-400 hover:text-white hover:bg-white/10 hover:border-white/20 transition-all duration-300 hover:scale-110"
-              >
-                <social.icon />
-              </a>
-            ))}
+    <footer className="relative border-t border-white/10 bg-black/40 backdrop-blur-xl">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+        {/* Main Footer Content */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-8 mb-12">
+          {/* Brand Section */}
+          <div className="lg:col-span-2">
+            <div className="flex items-center space-x-3 mb-6">
+              <div className="w-10 h-10 bg-gradient-to-br from-blue-400 to-purple-600 rounded-xl flex items-center justify-center shadow-lg">
+                <div className="w-4 h-4 bg-white rounded-sm"></div>
+              </div>
+              <span className="font-bold text-xl text-white tracking-tight">
+                GOSS
+              </span>
+            </div>
+            <p className="text-gray-400 leading-relaxed mb-6 max-w-sm">
+              Building the future of AI through open-source collaboration. 
+              Democratizing artificial intelligence for developers worldwide.
+            </p>
+            <div className="flex items-center space-x-2 text-gray-400 text-sm mb-2">
+              <Globe size={16} />
+              <span>Open Source AI Platform</span>
+            </div>
+            <div className="flex items-center space-x-2 text-gray-400 text-sm">
+              <MapPin size={16} />
+              <span>Global Community</span>
+            </div>
           </div>
 
-          {/* Copyright */}
-          <div className="space-y-2">
-            <p className="text-gray-400 text-sm">
-              © 2024 Global OpenSource Softwares. All rights reserved.
-            </p>
-            <p className="text-gray-500 text-xs">
-              Building the future of AI, one open-source project at a time.
-            </p>
+          {/* Footer Links */}
+          {Object.entries(footerLinks).map(([category, links]) => (
+            <div key={category}>
+              <h3 className="font-semibold text-white mb-4">{category}</h3>
+              <ul className="space-y-2">
+                {links.map((link) => (
+                  <li key={link}>
+                    <a
+                      href={`#${link.toLowerCase().replace(/\s+/g, '-')}`}
+                      className="text-gray-400 hover:text-white transition-colors duration-200 text-sm"
+                    >
+                      {link}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ))}
+        </div>
+
+        {/* Newsletter Section */}
+        <div className="border-t border-white/10 pt-8 mb-8">
+          <div className="flex flex-col md:flex-row justify-between items-center">
+            <div className="mb-4 md:mb-0">
+              <h3 className="text-white font-semibold mb-2">Stay Updated</h3>
+              <p className="text-gray-400 text-sm">Get the latest updates on our AI models and tools.</p>
+            </div>
+            <div className="flex space-x-2">
+              <input
+                type="email"
+                placeholder="Enter your email"
+                className="bg-white/10 border border-white/20 rounded-lg px-4 py-2 text-white placeholder-gray-400 focus:outline-none focus:border-purple-500 transition-colors"
+              />
+              <button className="bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 text-white px-6 py-2 rounded-lg transition-all duration-300 hover:scale-105">
+                Subscribe
+              </button>
+            </div>
+          </div>
+        </div>
+
+        {/* Social Links & Copyright */}
+        <div className="border-t border-white/10 pt-8">
+          <div className="flex flex-col md:flex-row justify-between items-center">
+            <div className="flex items-center space-x-6 mb-4 md:mb-0">
+              {socialLinks.map((social, index) => (
+                <a
+                  key={index}
+                  href={social.href}
+                  aria-label={social.label}
+                  className="w-10 h-10 bg-white/5 border border-white/10 rounded-lg flex items-center justify-center text-gray-400 hover:text-white hover:bg-white/10 hover:border-white/20 transition-all duration-300 hover:scale-110"
+                >
+                  <social.icon />
+                </a>
+              ))}
+            </div>
+            
+            <div className="text-center md:text-right">
+              <p className="text-gray-400 text-sm mb-1">
+                © 2024 Global OpenSource Softwares. All rights reserved.
+              </p>
+              <p className="text-gray-500 text-xs">
+                Building the future of AI, one open-source project at a time.
+              </p>
+            </div>
           </div>
         </div>
       </div>
