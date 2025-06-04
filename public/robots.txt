@@ -1,8 +1,23 @@
 # robots.txt for globalopensourcesoftwares.in
 
-# Allow crawling of all content by all user agents
 User-agent: *
 Allow: /
 
-# Specify the location of your sitemap file
-Sitemap: https://globalopensourcesoftwares.in/sitemap.xml
+Crawl-delay: 10
+
+User-agent: Googlebot
+Crawl-delay: 5
+
+User-agent: Bingbot
+Crawl-delay: 5
+
+User-agent: Yandex
+Crawl-delay: 5
+
+User-agent: *
+Crawl-delay: 10
+
+
+
+
+Sitemap:  https://globalopensourcesoftwares.in/sitemap.xml

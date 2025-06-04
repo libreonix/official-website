@@ -19,4 +19,31 @@
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
+  <url>
+    <loc>https://globalopensourcesoftwares.in/careers</loc>
+  </url>
+  <url>
+    <loc>https://globalopensourcesoftwares.in/blogs</loc>
+  </url>
+  <url>
+    <loc>https://globalopensourcesoftwares.in/contact</loc>
+  </url>
+  <url>
+    <loc>https://globalopensourcesoftwares.in/investors</loc>
+  </url>
+  <url>
+    <loc>https://globalopensourcesoftwares.in/partners</loc>
+  </url>
+  <url>
+    <loc>https://globalopensourcesoftwares.in/faq</loc>
+  </url>
+  <url>
+    <loc>https://globalopensourcesoftwares.in/ticket</loc>
+  </url>
+  <url>
+    <loc>https://globalopensourcesoftwares.in/tos</loc>
+  </url>
+  <url>
+    <loc>https://globalopensourcesoftwares.in/privacy</loc>
+  </url>
 </urlset> 
