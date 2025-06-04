@@ -27,7 +27,11 @@ const NotFound = () => {
         <div className="container mx-auto px-8 py-48 text-white text-center flex flex-col items-center">
           <h1 className="text-4xl font-bold mb-8 text-purple-400">404 Token lost in hallucination</h1>
           <p className="text-xl text-gray-600 mb-4">Oops! Page not found</p>
-          <a href="/" className="text-blue-500 hover:text-blue-700 underline">
+          <a
+            href="/"
+            className="text-blue-500 hover:text-blue-700 underline"
+            aria-label="Return to home page"
+          >
             Return to Home
           </a>
         </div>

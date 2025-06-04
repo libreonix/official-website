@@ -29,6 +29,7 @@ const Contact = () => {
     h-10 px-4 py-2 transform active:scale-95 
     focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-purple-900 focus-visible:ring-offset-2 
     disabled:pointer-events-none disabled:opacity-50"
+  aria-label="Email Global OpenSource Softwares"
 >
   Email Us
 </a>

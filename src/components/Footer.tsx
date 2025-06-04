@@ -52,7 +52,7 @@ const Footer = () => {
           {/* Brand Section */}
           <div className="lg:col-span-2">
             <div className="flex items-center">
-              <img src="/goss-logo.png" alt="GOSS" className="w-40 h-40" />
+              <img src="/goss-logo.png" alt="Global OpenSource Softwares logo" className="w-40 h-40" />
             </div>
             <p className="text-gray-400 leading-relaxed mb-6 max-w-sm">
               Building the future of AI through open-source collaboration. 
