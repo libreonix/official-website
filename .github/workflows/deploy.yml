@@ -1,43 +1,27 @@
 name: Deploy to Hostinger
 
-on:
-  push:
-    branches:
-      # Specify the branch that triggers the deployment
-      - main
+on: push:
+  branches:
+    - main
 
 jobs:
-  build-and-deploy:
+  deploy:
     runs-on: ubuntu-latest
 
     steps:
     - name: Checkout code
       uses: actions/checkout@v4
 
-    - name: Set up Node.js
-      uses: actions/setup-node@v4
+    - name: Install dependencies & build
+      run: |
+        npm install
+        npm run build
+
+    - name: Deploy via FTP
+      uses: SamKirkland/FTP-Deploy-Action@v4
       with:
-        node-version: '20' # Or your preferred Node.js version
-
-    - name: Install dependencies
-      run: npm install # Or yarn install if you use yarn
-
-    - name: Build React App
-      run: npm run build # Or yarn build if you use yarn
-
-    - name: Deploy to Hostinger via SFTP
-      uses: samuelmeuli/action-sftp@v1.1.0
-      with:
-        host: ${{ secrets.SFTP_HOST }}
-        port: ${{ secrets.SFTP_PORT }} # Usually 22 for SFTP
-        username: ${{ secrets.SFTP_USERNAME }}
-        password: ${{ secrets.SFTP_PASSWORD }}
-        localPath: './build/' # The directory where your build output is located (e.g., ./build or ./dist)
-        remotePath: '/public_html/' # The target directory on your Hostinger server
-        # Optional: Delete remote files that are not in localPath
-        # Note: Use with caution! This will delete everything in remotePath not in localPath
-        # deleteRemote: true
-
-      env:
-        # Use a dummy variable here to avoid logging secrets in plaintext
-        CI: true
+        server: ${{ secrets.FTP_SERVER }}
+        username: ${{ secrets.FTP_USERNAME }}
+        password: ${{ secrets.FTP_PASSWORD }}
+        local-dir: build
+        server-dir: /public_html/
