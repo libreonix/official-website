@@ -54,3 +54,4 @@ jobs:
             quit;
           "
           echo "✅ Deployment to Hostinger completed successfully."
+
