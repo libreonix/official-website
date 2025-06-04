@@ -25,22 +25,22 @@ const Footer = () => {
       { text: 'GitHub Repos', href: 'https://github.com/globalopensourcesoftwares' }
     ],
     Company: [
-      { text: 'About Us', href: 'https://gossorg.in/about' },
-      { text: 'Blog', href: '#blog' },
-      { text: 'Careers', href: 'https://gossorg.in/careers' },
-      { text: 'Contact', href: 'https://gossorg.in/contact' },
-      { text: 'Investors', href: 'https://gossorg.in/investors' },
-      { text: 'Partners', href: 'https://gossorg.in/partners' },
-      { text: 'Press', href: 'https://gossorg.in/press' },
+      { text: 'About Us', href: '/about' },
+      { text: 'Blog', href: '/blogs' },
+      { text: 'Careers', href: '/careers' },
+      { text: 'Contact', href: '/contact' },
+      { text: 'Investors', href: '/investors' },
+      { text: 'Partners', href: '/partners' },
+      { text: 'Press', href: '/press' },
     ],
     Support: [
-      { text: 'FAQ', href: 'https://gossorg.in/FAQ' },
-      { text: 'Ticket', href: 'https://gossorg.in/ticket' },
+      { text: 'FAQ', href: '/faq' },
+      { text: 'Ticket', href: '/ticket' },
     ],
     Legal: [
-      { text: 'Terms of Service', href: 'https://gossorg.in/terms' },
-      { text: 'Privacy Policy', href: 'https://gossorg.in/privacy' },
-      { text: 'License', href: 'https://gossorg.in/license' },
+      { text: 'Terms of Service', href: '/tos' },
+      { text: 'Privacy Policy', href: '/privacy' },
+      { text: 'License', href: '/license' },
     ]
   };
 

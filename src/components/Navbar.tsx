@@ -18,9 +18,11 @@ const Navbar = () => {
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
             {[
-              { text: 'Home', href: '#home' },
-              { text: 'Products', href: 'https://braindock.gossorg.in' },
-              { text: 'Contact', href: 'https://gossorg.in/contact' },
+               { text: 'Home', href: '/' },
+              { text: 'About', href: '/about' },
+              { text: 'Careers', href: '/careers' },
+              { text: 'Products', href: '/products' },
+              { text: 'Contact', href: '/contact' },
               { text: 'GitHub', href: 'https://github.com/globalopensourcesoftwares' },
             ].map((item) => (
               <a
@@ -33,7 +35,7 @@ const Navbar = () => {
             ))}
           </div>
 
-          {/* Mobile Menu Button */}
+          {/* Mobile Menu Button */}  
           <Button 
             variant="ghost" 
             size="sm" 
@@ -49,9 +51,11 @@ const Navbar = () => {
           <div className="md:hidden border-t border-white/10 bg-black/20 backdrop-blur-xl">
             <div className="px-2 pt-2 pb-3 space-y-1">
               {[
-                { text: 'Home', href: '#home' },
-                { text: 'Products', href: 'https://braindock.gossorg.in' },
-                { text: 'Contact', href: 'https://gossorg.in/contact' },
+                { text: 'Home', href: '/' },
+                { text: 'About', href: '/about' },
+                { text: 'Careers', href: '/careers' },
+                { text: 'Products', href: '/products' },
+                { text: 'Contact', href: '/contact' },
                 { text: 'GitHub', href: 'https://github.com/globalopensourcesoftwares' },
               ].map((item) => (
                 <a
