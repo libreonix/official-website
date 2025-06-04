@@ -1,28 +1,56 @@
-name: Deploy to Hostinger
+name: Deploy React App to Hostinger
 
 on:
   push:
     branches:
-      - main
+      - main # Triggers the workflow on push events to the main branch
 
 jobs:
   deploy:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-latest # Specifies the runner environment
 
     steps:
       - name: Checkout code
-        uses: actions/checkout@v4
+        uses: actions/checkout@v4 # Checks out your repository under $GITHUB_WORKSPACE
 
-      - name: Install dependencies & build
-        run: |
-          npm install
-          npm run build
-
-      - name: Deploy via FTP
-        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
         with:
-          server: ${{ secrets.FTP_SERVER }}
-          username: ${{ secrets.FTP_USERNAME }}
-          password: ${{ secrets.FTP_PASSWORD }}
-          local-dir: build
-          server-dir: /public_html/
+          node-version: '20' # Specifies the Node.js version
+          cache: 'npm' # Enables caching for npm dependencies
+
+      - name: Install dependencies
+        run: npm install # Installs project dependencies
+
+      - name: Build application
+        run: npm run build # Builds the React application (output typically in 'dist' or 'build' folder)
+        # Ensure your package.json's build script outputs to 'dist/'
+        # or change 'dist/' in the lftp command below accordingly.
+
+      - name: Install lftp
+        run: sudo apt-get update && sudo apt-get install -y lftp # Installs lftp utility
+
+      - name: Deploy to Hostinger via FTP
+        env:
+          FTP_SERVER: ${{ secrets.FTP_SERVER }}
+          FTP_USERNAME: ${{ secrets.FTP_USERNAME }}
+          FTP_PASSWORD: ${{ secrets.FTP_PASSWORD }}
+          REMOTE_DIRECTORY: /public_html/ # Or your specific remote path e.g., /domains/yourdomain.com/public_html/
+          SOURCE_DIRECTORY: dist/ # The local directory to upload (output of npm run build)
+        run: |
+          echo "🚀 Starting deployment to Hostinger..."
+          lftp -c "
+            set ftp:ssl-allow no; # Allow connection without SSL if needed, adjust based on Hostinger's FTP config
+            set ssl:verify-certificate no; # Disable SSL certificate verification if using self-signed or problematic certs
+            open -u '$FTP_USERNAME','$FTP_PASSWORD' '$FTP_SERVER';
+            lcd '$SOURCE_DIRECTORY';
+            mirror --reverse \
+                   --delete \
+                   --verbose \
+                   --exclude .git* \
+                   --exclude .git/ \
+                   --exclude .gitignore \
+                   . '$REMOTE_DIRECTORY';
+            quit;
+          "
+          echo "✅ Deployment to Hostinger completed successfully."
