@@ -1,14 +1,13 @@
 import Navbar from '@/components/Navbar';
-import HeroSection from '@/components/HeroSection';
 import Footer from '@/components/Footer';
 import { Helmet } from 'react-helmet-async';
 
-const Index = () => {
+const Ticket = () => {
   return (
     <>
       <Helmet>
-        <title>Global OpenSource Softwares - AI Solutions for Everyone</title>
-        <meta name="description" content="Discover Global OpenSource Softwares, building AI-powered solutions to empower individuals and businesses from all backgrounds." />
+        <title>Submit a Ticket - Global OpenSource Softwares</title>
+        <meta name="description" content="Submit a support ticket to Global OpenSource Softwares for assistance with our AI solutions." />
       </Helmet>
       <div className="min-h-screen bg-gradient-to-br from-slate-950 via-purple-950 to-slate-950 font-inter antialiased">
         {/* Animated gradient background */}
@@ -20,7 +19,10 @@ const Index = () => {
         {/* Main Content */}
         <div className="relative z-10">
           <Navbar />
-          <HeroSection />
+          <div className="container mx-auto px-8 py-48 text-white text-center flex flex-col items-center">
+            <h1 className="text-4xl font-bold mb-8 text-purple-400">Submit a Ticket</h1>
+            <p className="text-xl">Ticket submission form or content goes here.</p>
+          </div>
           <Footer />
         </div>
       </div>
@@ -28,4 +30,4 @@ const Index = () => {
   );
 };
 
-export default Index;
+export default Ticket; 

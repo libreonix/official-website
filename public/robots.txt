@@ -1,14 +1,8 @@
-User-agent: Googlebot
-Allow: /
+# robots.txt for globalopensourcesoftwares.in
 
-User-agent: Bingbot
-Allow: /
-
-User-agent: Twitterbot
-Allow: /
-
-User-agent: facebookexternalhit
-Allow: /
-
+# Allow crawling of all content by all user agents
 User-agent: *
 Allow: /
+
+# Specify the location of your sitemap file
+Sitemap: https://globalopensourcesoftwares.in/sitemap.xml
