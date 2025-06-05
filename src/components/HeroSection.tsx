@@ -7,19 +7,19 @@ const HeroSection = () => {
       <div className="max-w-5xl mx-auto text-center relative">
         {/* Animated Background Elements */}
         <div className="absolute inset-0 -z-10">
-          <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-blue-500/10 rounded-full blur-3xl animate-pulse"></div>
-          <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-purple-500/10 rounded-full blur-3xl animate-pulse delay-1000"></div>
+          <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-gradient-to-r from-slate-800/20 to-blue-900/30 rounded-full blur-3xl animate-pulse"></div>
+          <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-gradient-to-r from-blue-900/30 to-slate-800/20 rounded-full blur-3xl animate-pulse delay-1000"></div>
         </div>
 
         {/* Badge */}
-        {/* <div className="inline-flex items-center space-x-2 bg-purple-500/10 border border-purple-500/20 rounded-full px-8 py-4 mb-10 backdrop-blur-sm transform hover:scale-105 transition-all duration-300 shadow-lg"> */}
-          <Sparkles size={16} className="text-purple-400 animate-pulse" />
-          <span className="text-purple-300 text-sm font-medium tracking-wide">Global OpenSource Softwares</span>
+        {/* <div className="inline-flex items-center space-x-2 bg-slate-800/20 border border-slate-600/30 rounded-full px-8 py-4 mb-10 backdrop-blur-sm transform hover:scale-105 transition-all duration-300 shadow-lg"> */}
+          <Sparkles size={16} className="text-slate-300 animate-pulse" />
+          <span className="text-slate-200 text-sm font-medium tracking-wide">Global OpenSource Softwares</span>
         {/* </div> */}
         
         {/* Main Heading */}
         <div className="relative mb-12">
-          <h1 className="text-6xl sm:text-8xl lg:text-9xl font-black text-transparent bg-clip-text bg-gradient-to-r from-blue-500 via-purple-600 to-blue-500 leading-none tracking-tight transform hover:scale-105 transition-all duration-500 ease-out animate-fade-in">
+          <h1 className="text-6xl sm:text-8xl lg:text-9xl font-black text-transparent bg-clip-text bg-gradient-to-r from-slate-200 via-slate-100 to-slate-200 leading-none tracking-tight transform hover:scale-105 transition-all duration-500 ease-out animate-fade-in drop-shadow-2xl">
             GOSS
           </h1>
           {/* Subtitle moved below and properly styled */}
@@ -32,7 +32,7 @@ const HeroSection = () => {
         <div className="mb-12 animate-fade-in-delay-2">
           <p className="text-lg sm:text-xl text-gray-400 max-w-4xl mx-auto leading-relaxed">
             Explore cutting-edge technologies designed to accelerate progress for a better tomorrow.
-            <span className="block mt-4 text-blue-300 font-medium">
+            <span className="block mt-4 text-slate-300 font-medium">
               Explore how GOSS empowers the ecosystem and contributes to a more open and innovative AI future.
             </span>
           </p>
@@ -42,7 +42,7 @@ const HeroSection = () => {
         <div className="mb-20 animate-fade-in-delay-3">
           <Button 
             size="lg" 
-            className="bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 text-white font-semibold px-12 py-4 rounded-xl transition-all duration-300 shadow-2xl hover:shadow-blue-500/25 hover:scale-110 transform group text-lg"
+            className="bg-gradient-to-r from-slate-700 via-slate-800 to-slate-900 hover:from-slate-600 hover:via-slate-700 hover:to-slate-800 text-white font-semibold px-12 py-4 rounded-xl transition-all duration-300 shadow-2xl hover:shadow-slate-700/50 hover:scale-110 transform group text-lg border border-slate-600/30"
             onClick={() => {
               window.location.href = 'https://braindock.gossorg.in';
             }}

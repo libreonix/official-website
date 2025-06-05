@@ -101,9 +101,9 @@ const Footer = () => {
               <input
                 type="email"
                 placeholder="Enter your email"
-                className="bg-white/10 border border-white/20 rounded-lg px-4 py-2 text-white placeholder-gray-400 focus:outline-none focus:border-purple-500 transition-colors"
+                className="bg-slate-800/50 border border-slate-600/30 rounded-lg px-4 py-2 text-white placeholder-slate-400 focus:outline-none focus:border-slate-400 focus:ring-2 focus:ring-slate-400/20 transition-all"
               />
-              <button className="bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 text-white px-6 py-2 rounded-lg transition-all duration-300 hover:scale-105">
+              <button className="bg-gradient-to-r from-slate-700 via-slate-800 to-slate-900 hover:from-slate-600 hover:via-slate-700 hover:to-slate-800 text-white px-6 py-2 rounded-lg transition-all duration-300 hover:scale-105 border border-slate-600/30 shadow-lg hover:shadow-slate-700/50">
                 Subscribe
               </button>
             </div>
