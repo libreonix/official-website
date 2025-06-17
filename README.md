@@ -1,14 +1,14 @@
-# GOSS: Global OpenSource Softwares
+# Libreonix Private Limited
 
 ## Empowering Business Logic with AI
 
-GOSS is a startup dedicated to bridging the gap between open-source innovation and proprietary technology to deliver robust AI solutions for business logic. We believe in leveraging the power of collaboration and flexible technology stacks to build the future of software development.
+Libreonix Private Limited is a startup dedicated to bridging the gap between open-source innovation and proprietary technology to deliver robust AI solutions for business logic. We believe in leveraging the power of collaboration and flexible technology stacks to build the future of software development.
 
 ## Featured Project: Braindock
 
 Our latest endeavor is **Braindock**, a comprehensive AI workspace designed to streamline your creative and productive workflow.
 
-**Visit Braindock:** [braindock.gossorg.in](https://braindock.gossorg.in)
+**Visit Braindock:** [braindock.libreonix.in](https://braindock.libreonix.in)
 
 **Description:**
 
@@ -33,7 +33,7 @@ Braindock offers a Free Forever plan, perfect for getting started, with a Pro pl
 
 Ready to experience Braindock? Start creating today!
 
-*   [Try it now](https://braindock.gossorg.in) - Free forever, no credit card needed.
+*   [Try it now](https://braindock.libreonix.in) - Free forever, no credit card needed.
 *   Watch how Braindock transforms your creative workflow (Link to demo video needed)
 
 ## License
