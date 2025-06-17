@@ -6,8 +6,21 @@ const Ticket = () => {
   return (
     <>
       <Helmet>
-        <title>Submit a Ticket - Global OpenSource Softwares</title>
-        <meta name="description" content="Submit a support ticket to Global OpenSource Softwares for assistance with our AI solutions." />
+        <title>Submit a Ticket - Libreonix Private Limited</title>
+        <meta name="description" content="Submit a support ticket to Libreonix Private Limited for assistance with our AI solutions." />
+        <link rel="canonical" href="https://libreonix.in/ticket" />
+        {/* Open Graph / Facebook */}
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://libreonix.in/ticket" />
+        <meta property="og:title" content="Submit a Ticket - Libreonix Private Limited" />
+        <meta property="og:description" content="Submit a support ticket to Libreonix Private Limited for assistance with our AI solutions." />
+        <meta property="og:image" content="https://libreonix.in/og-image.jpg" />
+        {/* Twitter */}
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:url" content="https://libreonix.in/ticket" />
+        <meta property="twitter:title" content="Submit a Ticket - Libreonix Private Limited" />
+        <meta property="twitter:description" content="Submit a support ticket to Libreonix Private Limited for assistance with our AI solutions." />
+        <meta property="twitter:image" content="https://libreonix.in/twitter-image.jpg" />
       </Helmet>
       <div className="min-h-screen bg-gradient-to-br from-slate-950 via-slate-900 to-slate-950 font-inter antialiased">
         {/* Animated gradient background */}

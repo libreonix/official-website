@@ -1,4 +1,4 @@
-# robots.txt for globalopensourcesoftwares.in
+# robots.txt for libreonix.in
 
 User-agent: *
 Allow: /
@@ -20,4 +20,4 @@ Crawl-delay: 10
 
 
 
-Sitemap:  https://globalopensourcesoftwares.in/sitemap.xml
+Sitemap:  https://libreonix.in/sitemap.xml

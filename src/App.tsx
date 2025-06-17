@@ -16,6 +16,7 @@ import Ticket from "./pages/Ticket";
 import TOS from "./pages/TOS";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import About from "./pages/About";
+import Press from "./pages/Press";
 
 const queryClient = new QueryClient();
 
@@ -38,6 +39,7 @@ const App = () => (
           <Route path="/tos" element={<TOS />} />
           <Route path="/privacy" element={<PrivacyPolicy />} />
           <Route path="/about" element={<About />} />
+          <Route path="/press" element={<Press />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>

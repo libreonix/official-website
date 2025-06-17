@@ -11,7 +11,7 @@ const Navbar = () => {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <div className="flex items-center space-x-3">
-            <img src="/goss-logo.png" alt="Global OpenSource Softwares logo" className="w-20 h-20" />
+            <img src="/libreonix_brand_assets/libreonix_logo_transparent.png" alt="Libreonix Private Limited logo" className="w-20 h-20" />
           </div>
 
           {/* Desktop Navigation */}
@@ -22,7 +22,7 @@ const Navbar = () => {
               { text: 'Careers', href: '/careers' },
               { text: 'Products', href: '/products' },
               { text: 'Contact', href: '/contact' },
-              { text: 'GitHub', href: 'https://github.com/globalopensourcesoftwares' },
+              { text: 'GitHub', href: 'https://github.com/libreonix' },
             ].map((item) => (
               <a
                 key={item.text}
@@ -57,7 +57,7 @@ const Navbar = () => {
                 { text: 'Careers', href: '/careers' },
                 { text: 'Products', href: '/products' },
                 { text: 'Contact', href: '/contact' },
-                { text: 'GitHub', href: 'https://github.com/globalopensourcesoftwares' },
+                { text: 'GitHub', href: 'https://github.com/libreonix' },
               ].map((item) => (
                 <a
                   key={item.text}
@@ -70,10 +70,10 @@ const Navbar = () => {
                 </a>
               ))}
               <a
-                href="https://github.com/globalopensourcesoftwares"
+                href="https://github.com/libreonix"
                 className="flex items-center space-x-2 px-3 py-2 text-gray-300 hover:text-white transition-colors duration-200"
                 onClick={() => setIsMenuOpen(false)}
-                aria-label="Visit Global OpenSource Softwares GitHub profile"
+                aria-label="Visit Libreonix Private Limited GitHub profile"
               >
                 <Github size={16} />
                 <span>GitHub</span>

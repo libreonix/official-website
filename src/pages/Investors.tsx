@@ -6,8 +6,21 @@ const Investors = () => {
   return (
     <>
       <Helmet>
-        <title>Investors - Global OpenSource Softwares</title>
-        <meta name="description" content="Discover investment opportunities with Global OpenSource Softwares and join us in building the future of AI." />
+        <title>Investors - Libreonix Private Limited</title>
+        <meta name="description" content="Discover investment opportunities with Libreonix Private Limited and join us in building the future of AI." />
+        <link rel="canonical" href="https://libreonix.in/investors" />
+        {/* Open Graph / Facebook */}
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://libreonix.in/investors" />
+        <meta property="og:title" content="Investors - Libreonix Private Limited" />
+        <meta property="og:description" content="Discover investment opportunities with Libreonix Private Limited and join us in building the future of AI." />
+        <meta property="og:image" content="https://libreonix.in/og-image.jpg" />
+        {/* Twitter */}
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:url" content="https://libreonix.in/investors" />
+        <meta property="twitter:title" content="Investors - Libreonix Private Limited" />
+        <meta property="twitter:description" content="Discover investment opportunities with Libreonix Private Limited and join us in building the future of AI." />
+        <meta property="twitter:image" content="https://libreonix.in/twitter-image.jpg" />
       </Helmet>
       <div className="min-h-screen bg-gradient-to-br from-slate-950 via-slate-900 to-slate-950 font-inter antialiased">
         {/* Animated gradient background */}

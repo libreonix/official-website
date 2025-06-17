@@ -6,8 +6,8 @@ const Careers = () => {
   return (
     <>
       <Helmet>
-        <title>Careers at Global OpenSource Softwares</title>
-        <meta name="description" content="Explore career opportunities at Global OpenSource Softwares and join our mission to empower with AI-powered solutions." />
+        <title>Careers at Libreonix Private Limited</title>
+        <meta name="description" content="Explore career opportunities at Libreonix Private Limited and join our mission to empower with AI-powered solutions." />
       </Helmet>
       <div className="min-h-screen bg-gradient-to-br from-slate-950 via-slate-900 to-slate-950 font-inter antialiased">
         {/* Animated gradient background */}
@@ -27,6 +27,7 @@ const Careers = () => {
                 type="email"
                 placeholder="Enter your email"
                 className="flex h-10 w-full rounded-md border border-slate-600/30 bg-slate-800/50 px-3 py-2 text-sm ring-offset-slate-950 file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-slate-400 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-slate-400/20 focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 text-white"
+                aria-label="Email for job opening notifications"
               />
               <button
                 type="submit"

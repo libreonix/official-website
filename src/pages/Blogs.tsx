@@ -16,8 +16,21 @@ const Blogs = () => {
   return (
     <>
       <Helmet>
-        <title>Blogs - Global OpenSource Softwares</title>
-        <meta name="description" content="Read the latest updates and insights from Global OpenSource Softwares." />
+        <title>Blogs - Libreonix Private Limited</title>
+        <meta name="description" content="Read the latest updates and insights from Libreonix Private Limited." />
+        <link rel="canonical" href="https://libreonix.in/blogs" />
+        {/* Open Graph / Facebook */}
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://libreonix.in/blogs" />
+        <meta property="og:title" content="Blogs - Libreonix Private Limited" />
+        <meta property="og:description" content="Read the latest updates and insights from Libreonix Private Limited." />
+        <meta property="og:image" content="https://libreonix.in/og-image.jpg" />
+        {/* Twitter */}
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:url" content="https://libreonix.in/blogs" />
+        <meta property="twitter:title" content="Blogs - Libreonix Private Limited" />
+        <meta property="twitter:description" content="Read the latest updates and insights from Libreonix Private Limited." />
+        <meta property="twitter:image" content="https://libreonix.in/twitter-image.jpg" />
       </Helmet>
           <div className="min-h-screen bg-gradient-to-br from-slate-950 via-slate-900 to-slate-950 font-inter antialiased">
       {/* Animated gradient background */}

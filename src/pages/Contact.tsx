@@ -6,8 +6,9 @@ const Contact = () => {
   return (
     <>
       <Helmet>
-        <title>Contact Us - Global OpenSource Softwares</title>
-        <meta name="description" content="Get in touch with Global OpenSource Softwares for inquiries, support, or partnership opportunities." />
+        <title>Contact Us - Libreonix Private Limited</title>
+        <meta name="description" content="Get in touch with Libreonix Private Limited for inquiries, support, or partnership opportunities." />
+        <link rel="canonical" href="https://libreonix.in/contact" />
       </Helmet>
       <div className="min-h-screen bg-gradient-to-br from-slate-950 via-slate-900 to-slate-950 font-inter antialiased">
         {/* Animated gradient background */}
@@ -22,14 +23,14 @@ const Contact = () => {
           <div className="container mx-auto px-8 py-48 text-white text-center flex flex-col items-center">
             <h1 className="text-4xl font-bold mb-8 text-slate-200">Contact Us</h1>
             <a
-  href="mailto:ceo@globalopensourcesoftwares.in"
+  href="mailto:ceo@libreonix.in"
   className="inline-flex items-center justify-center rounded-md text-sm font-medium ring-offset-slate-950 bg-gradient-to-r from-slate-700 to-slate-800 text-slate-50 
       hover:from-slate-600 hover:to-slate-700 hover:scale-105 
     transition duration-300 ease-in-out 
     h-10 px-4 py-2 transform active:scale-95 
     focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-slate-400/20 focus-visible:ring-offset-2 
     disabled:pointer-events-none disabled:opacity-50"
-  aria-label="Email Global OpenSource Softwares"
+  aria-label="Email Libreonix Private Limited"
 >
   Email Us
 </a>

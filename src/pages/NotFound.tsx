@@ -2,6 +2,7 @@ import { useLocation } from "react-router-dom";
 import { useEffect } from "react";
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
+import { Helmet } from 'react-helmet-async';
 
 const NotFound = () => {
   const location = useLocation();
@@ -15,6 +16,23 @@ const NotFound = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-950 via-slate-900 to-slate-950 font-inter antialiased">
+      <Helmet>
+        <title>404 Not Found - Libreonix Private Limited</title>
+        <meta name="description" content="The page you are looking for does not exist on Libreonix Private Limited's website." />
+        <link rel="canonical" href="https://libreonix.in/404" />
+        {/* Open Graph / Facebook */}
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://libreonix.in/404" />
+        <meta property="og:title" content="404 Not Found - Libreonix Private Limited" />
+        <meta property="og:description" content="The page you are looking for does not exist on Libreonix Private Limited's website." />
+        <meta property="og:image" content="https://libreonix.in/og-image.jpg" />
+        {/* Twitter */}
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:url" content="https://libreonix.in/404" />
+        <meta property="twitter:title" content="404 Not Found - Libreonix Private Limited" />
+        <meta property="twitter:description" content="The page you are looking for does not exist on Libreonix Private Limited's website." />
+        <meta property="twitter:image" content="https://libreonix.in/twitter-image.jpg" />
+      </Helmet>
       {/* Animated gradient background */}
       <div className="fixed inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-slate-800/30 via-slate-950 to-black animate-pulse"></div>
       

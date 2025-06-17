@@ -6,8 +6,21 @@ const Products = () => {
   return (
     <>
       <Helmet>  
-        <title>Products - Global OpenSource Softwares</title>
-        <meta name="description" content="Explore AI-powered software solutions developed by Global OpenSource Softwares." />
+        <title>Products - Libreonix Private Limited</title>
+        <meta name="description" content="Explore AI-powered software solutions developed by Libreonix Private Limited." />
+        <link rel="canonical" href="https://libreonix.in/products" />
+        {/* Open Graph / Facebook */}
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://libreonix.in/products" />
+        <meta property="og:title" content="Products - Libreonix Private Limited" />
+        <meta property="og:description" content="Explore AI-powered software solutions developed by Libreonix Private Limited." />
+        <meta property="og:image" content="https://libreonix.in/og-image.jpg" />
+        {/* Twitter */}
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:url" content="https://libreonix.in/products" />
+        <meta property="twitter:title" content="Products - Libreonix Private Limited" />
+        <meta property="twitter:description" content="Explore AI-powered software solutions developed by Libreonix Private Limited." />
+        <meta property="twitter:image" content="https://libreonix.in/twitter-image.jpg" />
       </Helmet>
       <div className="min-h-screen bg-gradient-to-br from-slate-950 via-blue-950 to-slate-950 font-inter antialiased">
         {/* Animated gradient background */}
@@ -32,7 +45,7 @@ const Products = () => {
               <div className="flex flex-col justify-center p-8 flex-1 w-full text-left bg-slate-850">
                   <h2 className="text-2xl font-semibold text-blue-300 mb-2">Braindock - AI Workspace</h2>
                 <p className="text-base text-gray-400 mb-4 leading-relaxed">AI Workspace to help you study, research, and boost creativity.</p>
-                <a href="https://braindock.gossorg.in/" target="_blank" rel="noopener noreferrer" className="inline-block px-6 py-2 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded transition-colors">Visit Braindock</a>
+                <a href="https://braindock.libreonix.in/" target="_blank" rel="noopener noreferrer" className="inline-block px-6 py-2 bg-slate-700 hover:bg-slate-800 text-white font-medium rounded transition-colors border border-slate-600/30" aria-label="Visit Braindock AI Workspace">Visit Braindock</a>
               </div>
             </div>
             {/* Suspense Cards */}

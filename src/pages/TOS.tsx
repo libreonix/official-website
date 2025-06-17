@@ -6,8 +6,21 @@ const TOS = () => {
   return (
     <>
       <Helmet>
-        <title>Terms of Service - Global OpenSource Softwares</title>
-        <meta name="description" content="Read the terms of service for using Global OpenSource Softwares and its AI-powered solutions." />
+        <title>Terms of Service - Libreonix Private Limited</title>
+        <meta name="description" content="Read the terms of service for using Libreonix Private Limited and its AI-powered solutions." />
+        <link rel="canonical" href="https://libreonix.in/tos" />
+        {/* Open Graph / Facebook */}
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://libreonix.in/tos" />
+        <meta property="og:title" content="Terms of Service - Libreonix Private Limited" />
+        <meta property="og:description" content="Read the terms of service for using Libreonix Private Limited and its AI-powered solutions." />
+        <meta property="og:image" content="https://libreonix.in/og-image.jpg" />
+        {/* Twitter */}
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:url" content="https://libreonix.in/tos" />
+        <meta property="twitter:title" content="Terms of Service - Libreonix Private Limited" />
+        <meta property="twitter:description" content="Read the terms of service for using Libreonix Private Limited and its AI-powered solutions." />
+        <meta property="twitter:image" content="https://libreonix.in/twitter-image.jpg" />
       </Helmet>
       <div className="min-h-screen bg-gradient-to-br from-slate-950 via-slate-900 to-slate-950 font-inter antialiased">
         {/* Animated gradient background */}
@@ -53,7 +66,7 @@ const TOS = () => {
               <p className="text-lg mb-4">By continuing to access or use our Service after those revisions become effective, you agree to be bound by the revised terms. If you do not agree to the new terms, please stop using the Service.</p>
 
               <h2 className="text-2xl font-bold mb-4 text-slate-300">Contact Us</h2>
-              <p className="text-lg">If you have any questions about these Terms, please contact us at legal@globalopensourcesoftwares.in</p>
+              <p className="text-lg">If you have any questions about these Terms, please contact us at legal@libreonix.in</p>
             </div>
           </div>
           <Footer />

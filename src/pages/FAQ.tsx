@@ -6,8 +6,21 @@ const FAQ = () => {
   return (
     <>
       <Helmet>
-        <title>FAQ - Global OpenSource Softwares</title>
-        <meta name="description" content="Find answers to frequently asked questions about Global OpenSource Softwares and our AI-powered solutions." />
+        <title>FAQ - Libreonix Private Limited</title>
+        <meta name="description" content="Find answers to frequently asked questions about Libreonix Private Limited and our AI-powered solutions." />
+        <link rel="canonical" href="https://libreonix.in/faq" />
+        {/* Open Graph / Facebook */}
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://libreonix.in/faq" />
+        <meta property="og:title" content="FAQ - Libreonix Private Limited" />
+        <meta property="og:description" content="Find answers to frequently asked questions about Libreonix Private Limited and our AI-powered solutions." />
+        <meta property="og:image" content="https://libreonix.in/og-image.jpg" />
+        {/* Twitter */}
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:url" content="https://libreonix.in/faq" />
+        <meta property="twitter:title" content="FAQ - Libreonix Private Limited" />
+        <meta property="twitter:description" content="Find answers to frequently asked questions about Libreonix Private Limited and our AI-powered solutions." />
+        <meta property="twitter:image" content="https://libreonix.in/twitter-image.jpg" />
       </Helmet>
       <div className="min-h-screen bg-gradient-to-br from-slate-950 via-blue-950 to-slate-950 font-inter antialiased">
         {/* Animated gradient background */}

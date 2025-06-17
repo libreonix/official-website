@@ -2,7 +2,7 @@ import { Github, Twitter, Linkedin, Mail, MapPin, Globe, Instagram } from 'lucid
 
 const Footer = () => {
   const socialLinks = [
-    { icon: Github, href: 'https://github.com/globalopensourcesoftwares', label: 'GitHub' },
+    { icon: Github, href: 'https://github.com/libreonix', label: 'GitHub' },
     { icon: Twitter, href: '#twitter', label: 'Twitter' },
     { icon: Linkedin, href: '#linkedin', label: 'LinkedIn' },
     { 
@@ -14,15 +14,15 @@ const Footer = () => {
       href: '#discord', 
       label: 'Discord' 
     },
-    { icon: Instagram, href: 'https://instagram.com/gossorg.in', label: 'Instagram' },
+    { icon: Instagram, href: 'https://instagram.com/libreonix', label: 'Instagram' },
   ];
 
   const footerLinks = {
     Product: [
       { text: 'AI Agents', href: '#ai-agents' },
-      { text: 'Braindock', href: 'https://braindock.gossorg.in' },
+      { text: 'Braindock', href: 'https://braindock.libreonix.in' },
       { text: 'API Reference', href: '#api-reference' },
-      { text: 'GitHub Repos', href: 'https://github.com/globalopensourcesoftwares' }
+      { text: 'GitHub Repos', href: 'https://github.com/libreonix' }
     ],
     Company: [
       { text: 'About Us', href: '/about' },
@@ -52,7 +52,7 @@ const Footer = () => {
           {/* Brand Section */}
           <div className="lg:col-span-2">
             <div className="flex items-center">
-              <img src="/goss-logo.png" alt="Global OpenSource Softwares logo" className="w-40 h-40" />
+              <img src="/libreonix_brand_assets/libreonix_logo_fullcolor.png" alt="Libreonix Private Limited logo" className="w-40 h-40" />
             </div>
             <p className="text-gray-400 leading-relaxed mb-6 max-w-sm">
               Building the future of AI through open-source collaboration. 
@@ -102,8 +102,9 @@ const Footer = () => {
                 type="email"
                 placeholder="Enter your email"
                 className="bg-slate-800/50 border border-slate-600/30 rounded-lg px-4 py-2 text-white placeholder-slate-400 focus:outline-none focus:border-slate-400 focus:ring-2 focus:ring-slate-400/20 transition-all"
+                aria-label="Email for newsletter subscription"
               />
-              <button className="bg-gradient-to-r from-slate-700 via-slate-800 to-slate-900 hover:from-slate-600 hover:via-slate-700 hover:to-slate-800 text-white px-6 py-2 rounded-lg transition-all duration-300 hover:scale-105 border border-slate-600/30 shadow-lg hover:shadow-slate-700/50">
+              <button className="bg-gradient-to-r from-slate-700 via-slate-800 to-slate-900 hover:from-slate-600 hover:via-slate-700 hover:to-slate-800 text-white px-6 py-2 rounded-lg transition-all duration-300 hover:scale-105 border border-slate-600/30 shadow-lg hover:shadow-slate-700/50" aria-label="Subscribe to newsletter">
                 Subscribe
               </button>
             </div>
@@ -130,7 +131,7 @@ const Footer = () => {
             
             <div className="text-center md:text-right">
               <p className="text-gray-400 text-sm mb-1">
-                © 2024 Global OpenSource Softwares. All rights reserved.
+                © 2024 Libreonix Private Limited. All rights reserved.
               </p>
               <p className="text-gray-500 text-xs">
                 Building the future of AI, one open-source project at a time.

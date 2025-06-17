@@ -6,8 +6,21 @@ const About = () => {
   return (
     <> 
     <Helmet>
-      <title>Global OpenSource Softwares - About Us</title>
-      <meta name="description" content="Learn about Global OpenSource Softwares, their mission, and how they empower individuals and businesses with AI technology." />
+      <title>Libreonix Private Limited - About Us</title>
+      <meta name="description" content="Learn about Libreonix Private Limited, their mission, and how they empower individuals and businesses with AI technology." />
+      <link rel="canonical" href="https://libreonix.in/about" />
+      {/* Open Graph / Facebook */}
+      <meta property="og:type" content="website" />
+      <meta property="og:url" content="https://libreonix.in/about" />
+      <meta property="og:title" content="Libreonix Private Limited - About Us" />
+      <meta property="og:description" content="Learn about Libreonix Private Limited, their mission, and how they empower individuals and businesses with AI technology." />
+      <meta property="og:image" content="https://libreonix.in/og-image.jpg" />
+      {/* Twitter */}
+      <meta property="twitter:card" content="summary_large_image" />
+      <meta property="twitter:url" content="https://libreonix.in/about" />
+      <meta property="twitter:title" content="Libreonix Private Limited - About Us" />
+      <meta property="twitter:description" content="Learn about Libreonix Private Limited, their mission, and how they empower individuals and businesses with AI technology." />
+      <meta property="twitter:image" content="https://libreonix.in/twitter-image.jpg" />
     </Helmet>
           <div className="min-h-screen bg-gradient-to-br from-slate-950 via-slate-900 to-slate-950 font-inter antialiased">
         {/* Animated gradient background */}
@@ -20,10 +33,10 @@ const About = () => {
       <div className="relative z-10">
         <Navbar />
         <div className="container mx-auto px-8 py-32 text-white text-center flex flex-col items-center">
-            <h1 className="text-4xl font-bold mb-8 text-blue-400">About Us</h1>
+            <h1 className="text-4xl font-bold mb-8 text-slate-200">About Us</h1>
           <div className="max-w-3xl text-center text-lg">
             <p className="mb-6">
-              Global OpenSource Softwares builds AI-powered solutions to help everyone. Our goal is to make powerful AI tools accessible to regular people, students, developers, and professionals from all backgrounds.
+              Libreonix Private Limited builds AI-powered solutions to help everyone. Our goal is to make powerful AI tools accessible to regular people, students, developers, and professionals from all backgrounds.
             </p>
             <p>
               We believe AI should empower everyone. We're creating an open ecosystem where diverse ideas lead to better technology, helping people of all races, genders, and ethnicities solve problems and succeed with AI.

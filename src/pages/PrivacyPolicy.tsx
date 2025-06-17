@@ -6,8 +6,21 @@ const PrivacyPolicy = () => {
   return (
     <>
       <Helmet>
-        <title>Privacy Policy - Global OpenSource Softwares</title>
-        <meta name="description" content="Read the privacy policy of Global OpenSource Softwares regarding the collection, use, and disclosure of personal data." />
+        <title>Privacy Policy - Libreonix Private Limited</title>
+        <meta name="description" content="Read the privacy policy of Libreonix Private Limited regarding the collection, use, and disclosure of personal data." />
+        <link rel="canonical" href="https://libreonix.in/privacy" />
+        {/* Open Graph / Facebook */}
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://libreonix.in/privacy" />
+        <meta property="og:title" content="Privacy Policy - Libreonix Private Limited" />
+        <meta property="og:description" content="Read the privacy policy of Libreonix Private Limited regarding the collection, use, and disclosure of personal data." />
+        <meta property="og:image" content="https://libreonix.in/og-image.jpg" />
+        {/* Twitter */}
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:url" content="https://libreonix.in/privacy" />
+        <meta property="twitter:title" content="Privacy Policy - Libreonix Private Limited" />
+        <meta property="twitter:description" content="Read the privacy policy of Libreonix Private Limited regarding the collection, use, and disclosure of personal data." />
+        <meta property="twitter:image" content="https://libreonix.in/twitter-image.jpg" />
       </Helmet>
           <div className="min-h-screen bg-gradient-to-br from-slate-950 via-slate-900 to-slate-950 font-inter antialiased">
       {/* Animated gradient background */}
@@ -24,11 +37,11 @@ const PrivacyPolicy = () => {
             <div className="text-left max-w-3xl">
               <p className="text-lg mb-4">Effective date: 04/06/2025</p>
 
-              <p className="text-lg mb-4">Global OpenSource Softwares ("us", "we", or "our") operates the https://globalopensourcesoftwares.in website (the "Service").</p>
+              <p className="text-lg mb-4">Libreonix Private Limited ("us", "we", or "our") operates the https://libreonix.in website (the "Service").</p>
 
               <p className="text-lg mb-4">This page informs you of our policies regarding the collection, use, and disclosure of personal data when you use our Service and the choices you have associated with that data.</p>
 
-              <p className="text-lg mb-4">We use your data to provide and improve the Service. By using the Service, you agree to the collection and use of information in accordance with this policy. Unless otherwise defined in this Privacy Policy, terms used in this Privacy Policy have the same meanings as in our Terms and Conditions, accessible from https://globalopensourcesoftwares.in/tos.</p>
+              <p className="text-lg mb-4">We use your data to provide and improve the Service. By using the Service, you agree to the collection and use of information in accordance with this policy. Unless otherwise defined in this Privacy Policy, terms used in this Privacy Policy have the same meanings as in our Terms and Conditions, accessible from https://libreonix.in/tos.</p>
 
               <h2 className="text-2xl font-bold mb-4 text-slate-300">Information Collection And Use</h2>
               <p className="text-lg mb-4">We collect several different types of information for various purposes to provide and improve our Service to you.</p>
@@ -60,7 +73,7 @@ const PrivacyPolicy = () => {
               </ul>
 
               <h2 className="text-2xl font-bold mb-4 text-slate-300">Use of Data</h2>
-              <p className="text-lg mb-4">Global OpenSource Softwares uses the collected data for various purposes:</p>
+              <p className="text-lg mb-4">Libreonix Private Limited uses the collected data for various purposes:</p>
               <ul className="list-disc list-inside ml-4 mb-4">
                 <li>To provide and maintain the Service</li>
                 <li>To notify you about changes to our Service</li>
@@ -79,10 +92,10 @@ const PrivacyPolicy = () => {
               <h2 className="text-2xl font-bold mb-4 text-slate-300">Disclosure Of Data</h2>
 
               <h3 className="text-xl font-bold mb-2 text-slate-400">Legal Requirements</h3>
-              <p className="text-lg mb-4">Global OpenSource Softwares may disclose your Personal Data in the good faith belief that such action is necessary to:</p>
+              <p className="text-lg mb-4">Libreonix Private Limited may disclose your Personal Data in the good faith belief that such action is necessary to:</p>
               <ul className="list-disc list-inside ml-4 mb-4">
                 <li>To comply with a legal obligation</li>
-                <li>To protect and defend the rights or property of Global OpenSource Softwares</li>
+                <li>To protect and defend the rights or property of Libreonix Private Limited</li>
                 <li>To prevent or investigate possible wrongdoing in connection with the Service</li>
                 <li>To protect the personal safety of users of the Service or the public</li>
                 <li>To protect against legal liability</li>
@@ -109,7 +122,7 @@ const PrivacyPolicy = () => {
               <p className="text-lg mb-4">You are advised to review this Privacy Policy periodically for any changes. Changes to this Privacy Policy are effective when they are posted on this page.</p>
 
               <h2 className="text-2xl font-bold mb-4 text-slate-300">Contact Us</h2>
-              <p className="text-lg">If you have any questions about this Privacy Policy, please contact us at legal@globalopensourcesoftwares.in.</p>
+              <p className="text-lg">If you have any questions about this Privacy Policy, please contact us at legal@libreonix.in.</p>
             </div>
           </div>
           <Footer />
