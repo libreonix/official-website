@@ -44,7 +44,7 @@ const HeroSection = () => {
             size="lg" 
             className="bg-gradient-to-r from-slate-700 via-slate-800 to-slate-900 hover:from-slate-600 hover:via-slate-700 hover:to-slate-800 text-white font-semibold px-12 py-4 rounded-xl transition-all duration-300 shadow-2xl hover:shadow-slate-700/50 hover:scale-110 transform group text-lg border border-slate-600/30"
             onClick={() => {
-              window.location.href = 'https://braindock.libreonix.in';
+              window.location.href = 'https://www.braindock.in';
             }}
             aria-label="Discover Libreonix Products"
           >
