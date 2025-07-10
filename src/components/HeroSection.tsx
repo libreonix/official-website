@@ -62,9 +62,9 @@ const HeroSection = () => {
           <div className="flex flex-col sm:flex-row gap-12 justify-center items-center mb-8">
             <div className="transform hover:scale-110 transition-all duration-300 hover:rotate-3">
               <img 
-                src="/libreonix_brand_assets/libreonix_logo_transparent.png" 
+                src="/libreonix_logos/logo-256x256-blue.png" 
                 alt="Libreonix Logo" 
-                className="w-40 h-40 sm:w-40 sm:h-40 object-contain filter drop-shadow-lg hover:drop-shadow-2xl transition-all duration-300" 
+                className="w-56 h-56 sm:w-56 sm:h-56 object-contain filter drop-shadow-lg hover:drop-shadow-2xl transition-all duration-300" 
               />
             </div>
             <div className="transform hover:scale-110 transition-all duration-300 hover:-rotate-3">

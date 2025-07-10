@@ -20,7 +20,7 @@ const Footer = () => {
   const footerLinks = {
     Product: [
       { text: 'AI Agents', href: '#ai-agents' },
-      { text: 'Braindock', href: 'https://braindock.libreonix.in' },
+      { text: 'Braindock', href: 'https://www.braindock.in' },
       { text: 'API Reference', href: '#api-reference' },
       { text: 'GitHub Repos', href: 'https://github.com/libreonix' }
     ],
@@ -52,7 +52,7 @@ const Footer = () => {
           {/* Brand Section */}
           <div className="lg:col-span-2">
             <div className="flex items-center">
-              <img src="/libreonix_brand_assets/libreonix_logo_fullcolor.png" alt="Libreonix Private Limited logo" className="w-40 h-40" />
+              <img src="/libreonix_logos/logo-320x100-blue.png" alt="Libreonix Private Limited logo" className="w-72 h-auto" />
             </div>
             <p className="text-gray-400 leading-relaxed mb-6 max-w-sm">
               Building the future of AI through open-source collaboration. 

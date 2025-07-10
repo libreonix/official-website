@@ -1,6 +1,7 @@
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import { Helmet } from 'react-helmet-async';
+import { Github } from "lucide-react";
 
 const Products = () => {
   return (
@@ -45,7 +46,34 @@ const Products = () => {
               <div className="flex flex-col justify-center p-8 flex-1 w-full text-left bg-slate-850">
                   <h2 className="text-2xl font-semibold text-blue-300 mb-2">Braindock - AI Workspace</h2>
                 <p className="text-base text-gray-400 mb-4 leading-relaxed">AI Workspace to help you study, research, and boost creativity.</p>
-                <a href="https://braindock.libreonix.in/" target="_blank" rel="noopener noreferrer" className="inline-block px-6 py-2 bg-slate-700 hover:bg-slate-800 text-white font-medium rounded transition-colors border border-slate-600/30" aria-label="Visit Braindock AI Workspace">Visit Braindock</a>
+                <div className="mt-4 flex flex-wrap gap-4">
+                    <a href="https://www.braindock.in/" target="_blank" rel="noopener noreferrer" className="inline-block px-6 py-2 bg-slate-700 hover:bg-slate-800 text-white font-medium rounded transition-colors border border-slat">
+                      Live Demo
+                    </a>
+                  </div>
+                </div>
+            </div>
+            {/* Rhythma Card */}
+            <div className="w-full max-w-2xl flex flex-col md:flex-row bg-slate-900 rounded-xl shadow-lg mb-8 border border-blue-700/50 overflow-hidden transition-transform duration-300 hover:scale-[1.02] hover:shadow-2xl">
+              {/* Image Container */}
+              <div className="flex-shrink-0 w-full h-64 md:w-64 md:h-64 bg-slate-800 flex items-center justify-center overflow-hidden rounded-tl-xl md:rounded-none md:rounded-l-xl relative">
+                <img src="/Rhythma.png" alt="Rhythma - Menstrual Cycle Tracker" className="w-full h-full object-cover" />
+                <div className="absolute inset-0 bg-gradient-to-t from-slate-900/60 to-transparent"></div>
+              </div>
+              <div className="flex flex-col justify-center p-8 flex-1 w-full text-left bg-slate-850">
+                <h2 className="text-2xl font-semibold text-blue-300 mb-2">Rhythma</h2>
+                <p className="text-base text-gray-400 mb-4 leading-relaxed">An open-source, privacy-first menstrual cycle tracker.</p>
+                <div className="mt-4 flex flex-wrap gap-4">
+                  <a 
+                    href="https://github.com/IntegerAlex/Rhythma" 
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    className="inline-flex items-center gap-2 px-6 py-2 bg-slate-700 hover:bg-slate-800 text-white font-medium rounded-lg transition-colors border border-slate-600/30 shadow-lg"
+                  >
+                    <Github size={16} />
+                    GitHub
+                  </a>
+                </div>
               </div>
             </div>
             {/* Suspense Cards */}

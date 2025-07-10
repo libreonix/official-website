@@ -8,7 +8,7 @@ Libreonix Private Limited is a startup dedicated to bridging the gap between ope
 
 Our latest endeavor is **Braindock**, a comprehensive AI workspace designed to streamline your creative and productive workflow.
 
-**Visit Braindock:** [braindock.libreonix.in](https://braindock.libreonix.in)
+**Visit Braindock:** [www.braindock.in](https://www.braindock.in)
 
 **Description:**
 
@@ -33,7 +33,7 @@ Braindock offers a Free Forever plan, perfect for getting started, with a Pro pl
 
 Ready to experience Braindock? Start creating today!
 
-*   [Try it now](https://braindock.libreonix.in) - Free forever, no credit card needed.
+*   [Try it now](https://www.braindock.in) - Free forever, no credit card needed.
 *   Watch how Braindock transforms your creative workflow (Link to demo video needed)
 
 ## License

@@ -11,7 +11,7 @@ const Navbar = () => {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <div className="flex items-center space-x-3">
-            <img src="/libreonix_brand_assets/libreonix_logo_transparent.png" alt="Libreonix Private Limited logo" className="w-20 h-20" />
+            <img src="/libreonix_logos/logo-64x64-blue.png" alt="Libreonix Private Limited logo" className="w-16 h-16" />
           </div>
 
           {/* Desktop Navigation */}
