@@ -62,7 +62,7 @@ const Products = () => {
               </div>
               <div className="flex flex-col justify-center p-8 flex-1 w-full text-left bg-slate-850">
                 <h2 className="text-2xl font-semibold text-blue-300 mb-2">Rhythma</h2>
-                <p className="text-base text-gray-400 mb-4 leading-relaxed">An open-source, privacy-first menstrual cycle tracker.</p>
+                <p className="text-base text-gray-400 mb-4 leading-relaxed">An AI assisted open-source menstrual cycle tracking.</p>
                 <div className="mt-4 flex flex-wrap gap-4">
                   <a 
                     href="https://github.com/IntegerAlex/Rhythma" 

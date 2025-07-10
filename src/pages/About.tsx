@@ -1,7 +1,7 @@
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import { Helmet } from 'react-helmet-async';
-import { Github, Linkedin, Instagram } from 'lucide-react';
+import { Github, Linkedin, Instagram, Mail } from 'lucide-react';
 
 const About = () => {
   const teamMembers = [
@@ -12,6 +12,7 @@ const About = () => {
       socials: {
         github: 'https://github.com/IntegerAlex/',
         linkedin: 'https://www.linkedin.com/in/akshat-kotpalliwar/',
+        email: 'ceo@libreonix.in',
       },
     },
     {
@@ -27,6 +28,7 @@ const About = () => {
       socials: {
         instagram: 'https://www.instagram.com/joy_athawale?igsh=YmIzejA0a2JzeWZ3&utm_source=qr',
         linkedin: 'https://www.linkedin.com/in/joy-athawale?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app',
+        email: 'corporate@libreonix.in',
       },
     },
     {
@@ -35,6 +37,7 @@ const About = () => {
         imageUrl: '/team/doctor.jpeg',
         socials: {
             linkedin: 'https://www.linkedin.com/in/vaidehi-kumbhare-bb818a291?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
+            email: 'collaborate@libreonix.in',
         },
     }
   ];
@@ -100,6 +103,9 @@ const About = () => {
                     )}
                     {member.socials.instagram && (
                         <a href={member.socials.instagram} target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-white transition-colors"><Instagram size={20} /></a>
+                    )}
+                    {member.socials.email && (
+                        <a href={`mailto:${member.socials.email}`} className="text-slate-400 hover:text-white transition-colors"><Mail size={20} /></a>
                     )}
                   </div>
                 </div>
