@@ -8,6 +8,19 @@ const Careers = () => {
       <Helmet>
         <title>Careers at Libreonix Private Limited</title>
         <meta name="description" content="Explore career opportunities at Libreonix Private Limited and join our mission to empower with AI-powered solutions." />
+        <link rel="canonical" href="https://libreonix.in/careers" />
+        {/* Open Graph / Facebook */}
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://libreonix.in/careers" />
+        <meta property="og:title" content="Careers at Libreonix Private Limited" />
+        <meta property="og:description" content="Explore career opportunities at Libreonix Private Limited and join our mission to empower with AI-powered solutions." />
+        <meta property="og:image" content="https://libreonix.in/og-image.jpg" />
+        {/* Twitter */}
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:url" content="https://libreonix.in/careers" />
+        <meta property="twitter:title" content="Careers at Libreonix Private Limited" />
+        <meta property="twitter:description" content="Explore career opportunities at Libreonix Private Limited and join our mission to empower with AI-powered solutions." />
+        <meta property="twitter:image" content="https://libreonix.in/twitter-image.jpg" />
       </Helmet>
       <div className="min-h-screen bg-gradient-to-br from-slate-950 via-slate-900 to-slate-950 font-inter antialiased">
         {/* Animated gradient background */}
