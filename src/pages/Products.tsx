@@ -22,6 +22,38 @@ const Products = () => {
         <meta property="twitter:title" content="Products - Libreonix Private Limited" />
         <meta property="twitter:description" content="Explore AI-powered software solutions developed by Libreonix Private Limited." />
         <meta property="twitter:image" content="https://libreonix.in/twitter-image.jpg" />
+        <script type="application/ld+json">
+          {`
+            ${JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Product",
+              "name": "Braindock - AI Workspace",
+              "description": "AI Workspace to help you study, research, and boost creativity.",
+              "image": "https://libreonix.in/braindock.png",
+              "url": "https://www.braindock.in/",
+              "brand": {
+                "@type": "Brand",
+                "name": "Libreonix Private Limited"
+              }
+            }, null, 2)}
+          `}
+        </script>
+        <script type="application/ld+json">
+          {`
+            ${JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Product",
+              "name": "Rhythma - Menstrual Cycle Tracker",
+              "description": "An AI assisted open-source menstrual cycle tracking.",
+              "image": "https://libreonix.in/Rhythma.png",
+              "url": "https://github.com/IntegerAlex/Rhythma",
+              "brand": {
+                "@type": "Brand",
+                "name": "Libreonix Private Limited"
+              }
+            }, null, 2)}
+          `}
+        </script>
       </Helmet>
       <div className="min-h-screen bg-gradient-to-br from-slate-950 via-blue-950 to-slate-950 font-inter antialiased">
         {/* Animated gradient background */}

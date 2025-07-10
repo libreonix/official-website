@@ -60,6 +60,28 @@ const About = () => {
         <meta property="twitter:title" content="Libreonix Private Limited - About Us" />
         <meta property="twitter:description" content="Learn about Libreonix Private Limited, their mission, and how they empower individuals and businesses with AI technology." />
         <meta property="twitter:image" content="https://libreonix.in/twitter-image.jpg" />
+        {
+          teamMembers.map((member) => (
+            <script type="application/ld+json" key={member.name}>
+              {`
+                ${JSON.stringify({
+                  "@context": "https://schema.org",
+                  "@type": "Person",
+                  "name": member.name,
+                  "jobTitle": member.role,
+                  "image": member.imageUrl || undefined,
+                  "url": "https://libreonix.in/about", // Or a specific profile page if it existed
+                  "sameAs": [
+                    member.socials.github || undefined,
+                    member.socials.linkedin || undefined,
+                    member.socials.instagram || undefined,
+                    member.socials.email ? `mailto:${member.socials.email}` : undefined
+                  ].filter(Boolean)
+                }, null, 2)}
+              `}
+            </script>
+          ))
+        }
       </Helmet>
           <div className="min-h-screen bg-gradient-to-br from-slate-950 via-slate-900 to-slate-950 font-inter antialiased">
         {/* Animated gradient background */}
@@ -77,6 +99,10 @@ const About = () => {
             <p className="text-lg sm:text-xl text-slate-300 leading-relaxed mb-12">
               Libreonix Private Limited builds AI-powered solutions to help everyone. Our goal is to make powerful AI tools accessible to regular people, students, developers, and professionals from all backgrounds. We believe AI should empower everyone and are creating an open ecosystem where diverse ideas lead to better technology.
             </p>
+            <p className="text-lg sm:text-xl text-slate-300 leading-relaxed mb-12">
+              LIBREONIX PRIVATE LIMITED, a company registered in Maharashtra, India 
+            </p>
+            <p className="text-slate-400 text-lg">(CIN: U62090MH2025PTC450896)</p>
           </div>
 
           {/* Team Section */}
