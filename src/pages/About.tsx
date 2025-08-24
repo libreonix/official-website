@@ -113,7 +113,6 @@ const About = () => {
               <p className="text-lg sm:text-xl text-slate-300 leading-relaxed mb-12">
                 LIBREONIX PRIVATE LIMITED, a company registered in Maharashtra, India 
               </p>
-              <p className="text-slate-400 text-lg">(CIN: U62090MH2025PTC450896)</p>
             </div>
           </Suspense>
 
