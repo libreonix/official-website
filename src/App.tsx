@@ -17,7 +17,6 @@ import TOS from "./pages/TOS";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import About from "./pages/About";
 import Press from "./pages/Press";
-import AIAgents from "./pages/AIAgents";
 
 const queryClient = new QueryClient();
 
@@ -41,7 +40,6 @@ const App = () => (
           <Route path="/privacy" element={<PrivacyPolicy />} />
           <Route path="/about" element={<About />} />
           <Route path="/press" element={<Press />} />
-          <Route path="/ai-agents" element={<AIAgents />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>

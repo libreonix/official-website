@@ -21,7 +21,6 @@ const Navbar = () => {
               { text: 'About', href: '/about' },
               { text: 'Careers', href: '/careers' },
               { text: 'Products', href: '/products' },
-              // { text: 'AI Agents', href: '/ai-agents' },
               { text: 'Contact', href: '/contact' },
               { text: 'GitHub', href: 'https://github.com/libreonix' },
             ].map((item) => (
@@ -57,7 +56,6 @@ const Navbar = () => {
                 { text: 'About', href: '/about' },
                 { text: 'Careers', href: '/careers' },
                 { text: 'Products', href: '/products' },
-                { text: 'AI Agents', href: '/ai-agents' },
                 { text: 'Contact', href: '/contact' },
                 { text: 'GitHub', href: 'https://github.com/libreonix' },
               ].map((item) => (

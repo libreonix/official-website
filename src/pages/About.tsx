@@ -2,6 +2,7 @@ import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import { Helmet } from 'react-helmet-async';
 import { Github, Linkedin, Instagram, Mail } from 'lucide-react';
+import { Suspense } from 'react';
 
 const About = () => {
   const teamMembers = [
@@ -92,21 +93,32 @@ const About = () => {
 
       {/* Main Content */}
       <div className="relative z-10">
-        <Navbar />
+        <Suspense fallback={<div className="h-16 bg-slate-800 animate-pulse"></div>}>
+          <Navbar />
+        </Suspense>
         <div className="container mx-auto px-8 py-32 text-white flex flex-col items-center">
-          <div className="text-center w-full max-w-4xl">
-            <h1 className="text-4xl sm:text-5xl font-extrabold mb-6 text-slate-100 tracking-tight">About Libreonix</h1>
-            <p className="text-lg sm:text-xl text-slate-300 leading-relaxed mb-12">
-              Libreonix Private Limited builds AI-powered solutions to help everyone. Our goal is to make powerful AI tools accessible to regular people, students, developers, and professionals from all backgrounds. We believe AI should empower everyone and are creating an open ecosystem where diverse ideas lead to better technology.
-            </p>
-            <p className="text-lg sm:text-xl text-slate-300 leading-relaxed mb-12">
-              LIBREONIX PRIVATE LIMITED, a company registered in Maharashtra, India 
-            </p>
-            <p className="text-slate-400 text-lg">(CIN: U62090MH2025PTC450896)</p>
-          </div>
+          <Suspense fallback={
+            <div className="text-center w-full max-w-4xl">
+              <div className="h-12 bg-slate-800 rounded animate-pulse mb-6"></div>
+              <div className="h-6 bg-slate-800 rounded animate-pulse mb-4"></div>
+              <div className="h-6 bg-slate-800 rounded animate-pulse mb-4"></div>
+              <div className="h-6 bg-slate-800 rounded animate-pulse mb-4"></div>
+            </div>
+          }>
+            <div className="text-center w-full max-w-4xl">
+              <h1 className="text-4xl sm:text-5xl font-extrabold mb-6 text-slate-100 tracking-tight">About Libreonix</h1>
+              <p className="text-lg sm:text-xl text-slate-300 leading-relaxed mb-12">
+                Libreonix Private Limited builds AI-powered solutions to help everyone. Our goal is to make powerful AI tools accessible to regular people, students, developers, and professionals from all backgrounds. We believe AI should empower everyone and are creating an open ecosystem where diverse ideas lead to better technology.
+              </p>
+              <p className="text-lg sm:text-xl text-slate-300 leading-relaxed mb-12">
+                LIBREONIX PRIVATE LIMITED, a company registered in Maharashtra, India 
+              </p>
+              <p className="text-slate-400 text-lg">(CIN: U62090MH2025PTC450896)</p>
+            </div>
+          </Suspense>
 
-          {/* Team Section */}
-          <div className="w-full max-w-6xl mt-16">
+          {/* Team Section - Hidden */}
+          {/* <div className="w-full max-w-6xl mt-16">
             <h2 className="text-3xl sm:text-4xl font-bold text-center mb-12 text-slate-200">Meet the Team</h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
               {teamMembers.map((member, index) => (
@@ -137,9 +149,11 @@ const About = () => {
                 </div>
               ))}
             </div>
-          </div>
+          </div> */}
         </div>
-        <Footer />
+        <Suspense fallback={<div className="h-64 bg-slate-800 animate-pulse"></div>}>
+          <Footer />
+        </Suspense>
       </div>
     </div>
     </>

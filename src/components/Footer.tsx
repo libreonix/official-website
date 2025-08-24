@@ -7,7 +7,6 @@ const Footer = () => {
 
   const footerLinks = {
     Product: [
-      { text: 'AI Agents', href: '/ai-agents' },
       { text: 'Braindock', href: 'https://www.braindock.in' },
       { text: 'API Reference', href: '#api-reference' },
       { text: 'GitHub Repos', href: 'https://github.com/libreonix' }
